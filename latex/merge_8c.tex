@@ -1,0 +1,90 @@
+\hypertarget{merge_8c}{\section{merge.\+c File Reference}
+\label{merge_8c}\index{merge.\+c@{merge.\+c}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+Include dependency graph for merge.\+c\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{merge_8c_aca13b4bd8d8accbaff0a0bb48d92f74b}{exit\+On\+Error} (char const $\ast$message)
+\item 
+int \hyperlink{merge_8c_aba362af6d75d2ae3cc745001e91ff37f}{read\+List} (int $\ast$list)
+\item 
+void \hyperlink{merge_8c_a7bf50d44e0c891c9252ec303d4b2ec21}{sort\+List} (int $\ast$list, int len)
+\item 
+void \hyperlink{merge_8c_a859b92264d6844217f0df2c4b5494e53}{print\+List} (int $\ast$list, int len)
+\item 
+int \hyperlink{merge_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a merge sort for a list of 25,000 items. 
+
+\subsection{Function Documentation}
+\hypertarget{merge_8c_aca13b4bd8d8accbaff0a0bb48d92f74b}{\index{merge.\+c@{merge.\+c}!exit\+On\+Error@{exit\+On\+Error}}
+\index{exit\+On\+Error@{exit\+On\+Error}!merge.\+c@{merge.\+c}}
+\subsubsection[{exit\+On\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void exit\+On\+Error (
+\begin{DoxyParamCaption}
+\item[{char const $\ast$}]{message}
+\end{DoxyParamCaption}
+)}}\label{merge_8c_aca13b4bd8d8accbaff0a0bb48d92f74b}
+Exits on error with the parameterized message. 
+\begin{DoxyParams}{Parameters}
+{\em message} & a message to print upon exit \\
+\hline
+\end{DoxyParams}
+\hypertarget{merge_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{merge.\+c@{merge.\+c}!main@{main}}
+\index{main@{main}!merge.\+c@{merge.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{merge_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+Starts and runs the program. \hypertarget{merge_8c_a859b92264d6844217f0df2c4b5494e53}{\index{merge.\+c@{merge.\+c}!print\+List@{print\+List}}
+\index{print\+List@{print\+List}!merge.\+c@{merge.\+c}}
+\subsubsection[{print\+List}]{\setlength{\rightskip}{0pt plus 5cm}void print\+List (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{list, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{merge_8c_a859b92264d6844217f0df2c4b5494e53}
+Prints a sorted list. 
+\begin{DoxyParams}{Parameters}
+{\em list} & the sorted list to print \\
+\hline
+{\em len} & the length of the list \\
+\hline
+\end{DoxyParams}
+\hypertarget{merge_8c_aba362af6d75d2ae3cc745001e91ff37f}{\index{merge.\+c@{merge.\+c}!read\+List@{read\+List}}
+\index{read\+List@{read\+List}!merge.\+c@{merge.\+c}}
+\subsubsection[{read\+List}]{\setlength{\rightskip}{0pt plus 5cm}int read\+List (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{merge_8c_aba362af6d75d2ae3cc745001e91ff37f}
+Reads a list from standard input. 
+\begin{DoxyParams}{Parameters}
+{\em list} & a pointer to the list created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the list 
+\end{DoxyReturn}
+\hypertarget{merge_8c_a7bf50d44e0c891c9252ec303d4b2ec21}{\index{merge.\+c@{merge.\+c}!sort\+List@{sort\+List}}
+\index{sort\+List@{sort\+List}!merge.\+c@{merge.\+c}}
+\subsubsection[{sort\+List}]{\setlength{\rightskip}{0pt plus 5cm}void sort\+List (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{list, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{merge_8c_a7bf50d44e0c891c9252ec303d4b2ec21}
+Performs the merge sort. Function splits the list in half recursively sorts each half. 
+\begin{DoxyParams}{Parameters}
+{\em list} & a pointer to the list to be sorted \\
+\hline
+{\em len} & the length of the list \\
+\hline
+\end{DoxyParams}
