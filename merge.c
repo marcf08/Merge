@@ -1,5 +1,6 @@
 /**
  * Implements a merge sort for a list of 25,000 items.
+ * @file merge.c
  */
 
 #include <stdio.h>
